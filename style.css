@@ -32,6 +32,7 @@ main {
   right: 0;
   bottom: 0;
   width: calc(100% - 200px);
+  overflow-x: auto;
 }
 
 section {
@@ -42,6 +43,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .sidebar > div {
@@ -50,9 +52,14 @@ section {
   cursor: pointer;
 }
 
+.sidebar > div:hover {
+  color: #000;
+  background: #ccc;
+}
+
 .desc {
   margin-top: 50px;
-  padding: 40px 180px;
+  padding: 40px 170px;
   text-align: center;
   background: #999;
 }
@@ -74,8 +81,13 @@ article {
   align-items: center;
 }
 
+.main img {
+  cursor: pointer;
+}
+
 .item h3 {
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 footer {
